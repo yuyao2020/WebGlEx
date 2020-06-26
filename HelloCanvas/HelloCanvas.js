@@ -1,4 +1,4 @@
-//预览：https://yuyao2020.github.io/HelloCanvas/WebGlEx/HelloCanvas.html
+//预览：https://yuyao2020.github.io/WebGlEx/HelloCanvas/HelloCanvas.html
 function main(){
   //获取canvas元素
   var canvas = document.getElementById('webgl');
