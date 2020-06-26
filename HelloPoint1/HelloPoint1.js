@@ -38,3 +38,4 @@ function main(){
   //绘制一个点
   gl.drawArrays(gl.POINTS, 0, 1);
 }
+//提交不上，555
