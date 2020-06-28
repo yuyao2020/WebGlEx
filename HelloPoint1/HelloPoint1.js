@@ -9,7 +9,7 @@ var VSHADER_SOURCE =
   //片元着色器程序
 var FSHADER_SOURCE = 
   'void main(){\n'+
-  'gl_FragColor = vec4(1.0, 0.0, 0.0, 0.0);\n'+ //设置颜色
+  'gl_FragColor = vec4(1.0, 0.0, 1.0, 1.0);\n'+ //设置颜色
   '}\n';
 
 function main(){
