@@ -7,7 +7,7 @@
 
 //顶点着色器
 var VSHADER_SOURCE = 
-'attribute vec4 a_Position;\n' +   //存储限定符 + 类型 + 变量名
+'attribute vec4 a_Position;\n' +   //存储限定符 + 类型 + 变量名(attribute为 a_Position)
 'attribute float a_PointSize;\n'+
 'void main() {\n' + 
 'gl_Position = a_Position;\n' +    //attribute变量赋值给gl_Position
