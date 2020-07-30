@@ -113,7 +113,7 @@ function initTextures(gl, n){//准备待加载的纹理图像
   return true;
 }
 
-function loadTexture(gl, n, texture, u_Sampler, image){
+function loadTexture(gl, n, texture, u_Sampler, image){//为webgl配置纹理
   gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, 1);//对纹理图像进行Y轴反转
   
   gl.activeTexture(gl.TEXTURE0);//开启0号纹理单元
