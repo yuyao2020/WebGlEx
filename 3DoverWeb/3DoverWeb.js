@@ -67,8 +67,8 @@ function main(){
     var rect = ev.target.getBoundingClientRect();
     if(rect.left <= x && x < rect.right && rect.top <= y && y < rect.bottom){
       var x_in_canvas = x - rect.left, y_in_canvas = rect.bottom - y;
-      check(gl, n, x_in_canvas, y_in_canvas, currentAngle, u_Clicked, viewProjMatrix, u_MvpMatrix)
-      if(picked) alert('秋天选择了你！');
+      check(gl, n, x_in_canvas, y_in_canvas, currentAngle, u_Clicked, viewProjMatrix, u_MvpMatrix);
+
     }
   };
 
@@ -92,7 +92,7 @@ function check(gl, n, x, y, currentAngle, u_Clicked, viewProjMatrix, u_MvpMatrix
 
   gl.uniform1i(u_Clicked, 0);
   draw(gl, n, currentAngle, viewProjMatrix, u_MvpMatrix);
-  return picked;
+  if(picked) alert('秋天选择了你！');
 }
 
 var  g_MvpMatrix = new Matrix4();
